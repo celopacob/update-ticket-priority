@@ -1,9 +1,10 @@
+import os
 import requests
 from flask import abort
 
 
-AUTH_USER = 'marcelo@leafworks.de/token' 
-AUTH_PASSWORD = 's4jQu3XinhR2aTtRSt09mo06SmqC9eIMcDCaF9b2'
+AUTH_USER = os.environ.get("ZD_AUTH_USER")
+AUTH_PASSWORD = os.environ.get("ZD_AUTH_PASSWORD")
 
 def get_call(url):
     response = requests.get(

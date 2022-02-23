@@ -1,6 +1,6 @@
 import request_client as client
 
-
+# TO-DO: Move these env vars to .env if possible
 ZD_URL='https://conleafworks1635144020.zendesk.com/api'
 ZD_TICKETS_URL = ZD_URL + '/v2/tickets'
 ZD_SEARCH_TICKET_URL = ZD_URL + '/v2/tickets/{ticket_id}'
